@@ -1,7 +1,7 @@
-/* ============================================================
+/* =
    ARTK - Pâtisserie Chocolaterie
    Base: SPICEUP COFFEE pattern adapted for patisserie
-============================================================ */
+= */
 
 :root {
   --color-dark:     #0d1b2a;
@@ -36,9 +36,9 @@ img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; }
 
-/* ============================================================
+/* ===============
    HEADER
-============================================================ */
+= */
 #site-header {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -189,9 +189,9 @@ ul { list-style: none; }
   color: rgba(255,255,255,0.6);
 }
 
-/* ============================================================
+/* =
    HERO
-============================================================ */
+= */
 #hero {
   position: relative;
   height: 100svh;
@@ -209,7 +209,11 @@ ul { list-style: none; }
   align-items: center;
   justify-content: center;
 }
-.hero-overlay {
+.hero-slide-whole-cake {
+  background-position: center 52%;
+}
+/* Slide 2 uses the default hero background sizing. */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(to bottom, rgba(13,27,42,0.45) 0%, rgba(13,27,42,0.65) 100%);
@@ -296,9 +300,9 @@ ul { list-style: none; }
   100% { transform: scaleY(0); transform-origin: bottom; }
 }
 
-/* ============================================================
+/* =
    SHARED SECTION STYLES
-============================================================ */
+= */
 .section-label {
   font-family: var(--font-en);
   font-size: 0.65rem;
@@ -320,9 +324,9 @@ ul { list-style: none; }
   margin-bottom: 0;
 }
 
-/* ============================================================
+/* =
    CONCEPT
-============================================================ */
+= */
 .section-concept {
   padding: 100px 0;
   background: var(--color-cream);
@@ -353,7 +357,16 @@ ul { list-style: none; }
   font-size: 1rem;
   line-height: 1.9;
   color: #2c4266;
-  margin: 24px 0 32px;
+  margin: 24px 0;
+}
+.concept-text p {
+  font-size: 0.92rem;
+  line-height: 1.95;
+  color: #4a6080;
+  margin-bottom: 14px;
+}
+.concept-text p:last-child {
+  margin-bottom: 0;
 }
 .feature-item {
   display: flex;
@@ -375,9 +388,9 @@ ul { list-style: none; }
   color: #4a6080;
 }
 
-/* ============================================================
+/* =
    PRODUCTS
-============================================================ */
+===================================================== */
 .section-products {
   padding: 100px 0;
   background: var(--color-white);
